@@ -10,7 +10,7 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ config('app.name', 'Intercup') }} | Login</title>
+<title>{{ config('app.name', 'Jupiter Bike App') }} | Login</title>
 
 <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 
@@ -40,7 +40,7 @@
                     <form class="form-horizontal" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
                         <h1><p class="login-box-msg">
-                            <img src="{{url('/images/logo')}}/logo.jpeg" width="120"  class="img-square" >
+                            <img src="{{url('/images/logo')}}/logo.png" width="120"  class="img-square" >
                         </p></h1>
                         
                         <div>
@@ -64,7 +64,7 @@
                             <div class="clearfix"></div>
                             <br />
                             <div>
-                                <p>©2020 All Rights Reserved. Aplikasi Penjualan Intercup Plasindo</p>
+                                <p>©2021 All Rights Reserved. Jupiter Bike App</p>
                             </div>
                         </div>
                     </form>

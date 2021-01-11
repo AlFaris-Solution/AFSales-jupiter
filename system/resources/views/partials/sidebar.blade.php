@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col" style="position: fixed; top: 0; bottom: 0;">
     <div class="left_col scroll-view" style=" overflow-y: auto;">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="{{ url('/') }}" class="site_title"><i class="fa fa-home"></i> <span style="margin-left: 1rem;">IntercupApp</span></a>
+            <a href="{{ url('/') }}" class="site_title"><i class="fa fa-home"></i> <span style="margin-left: 1rem;">Jupiter Bike App</span></a>
         </div>
         <div class="clearfix"></div>
         
@@ -107,7 +107,7 @@
                             <li><a href="{{ url('akun') }}"> Data Akun</a></li>
                             @endcan
                             @can('Lihat Departemen')
-                            <li><a href="{{ url('departements') }}"> Data Departemen</a></li>
+                            <li><a href="{{ url('departements') }}"> Data Cabang</a></li>
                             @endcan
                             @can('Lihat Gudang')
                             <li><a href="{{ url('gudang') }}"> Data Gudang</a></li>

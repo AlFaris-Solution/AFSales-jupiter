@@ -23,7 +23,7 @@
     <div class="panel panel-default">
         
         <div class="panel-heading">
-            @lang('global.app_create') Tambah Departement
+           Tambah Cabang
         </div>
 
         @if (count($errors) > 0)
@@ -66,7 +66,7 @@
                 
                 
                 <div class="form-group">
-                    {!! Form::label('sub_departement', 'Sub Departement', ['class' => 'col-sm-2 control-label']) !!}
+                    {!! Form::label('sub_departement', 'Sub Cabang', ['class' => 'col-sm-2 control-label']) !!}
                     <div class="col-sm-10">
                     {!! Form::text('sub_departement', old('sub_departement'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     </div>
