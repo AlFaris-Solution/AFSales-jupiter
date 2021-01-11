@@ -16,7 +16,7 @@
 @section('content') 
 <div class="row">  
     <p>
-        <a href="{{ route('departements.create') }}" class="btn btn-success">@lang('global.app_add_new')</a>
+        <a href="{{ route('cabang.create') }}" class="btn btn-success">@lang('global.app_add_new')</a>
         {!! link_to_route('departements.excel', 
             'Export to Excel', null, 
             ['class' => 'btn btn-success']) 
@@ -25,7 +25,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            @lang('global.app_list') Departement
+            @lang('global.app_list') Cabang
         </div>
 
         <div class="panel-body table-responsive">

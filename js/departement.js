@@ -91,7 +91,7 @@ var confirmDelete = function(event, id, nama) {
 
 var datatables = (function() {
 
-    var datatablesURL = 'departements/list';
+    var datatablesURL = 'cabang/list';
 
     var init = function() {
         _applyDatatable();

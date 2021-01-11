@@ -62,9 +62,9 @@ Route::group(['middleware' => ['auth']], function () {
 
 
     Route::resource('departements','DepartementController')->except('data','show','destroy');
-    Route::get('departements/list','DepartementController@data')->name('departements.list');
-    Route::post('departements_mass_destroy', ['uses' => 'DepartementController@massDestroy', 'as' => 'departements.mass_destroy']);
-    Route::get('departements/delete/{id}','DepartementController@destroy');
+    Route::get('cabang/list','DepartementController@data')->name('departements.list');
+    Route::post('cabang_mass_destroy', ['uses' => 'DepartementController@massDestroy', 'as' => 'departements.mass_destroy']);
+    Route::get('cabang/delete/{id}','DepartementController@destroy');
 
 
 

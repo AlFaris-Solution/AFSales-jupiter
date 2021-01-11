@@ -8,13 +8,13 @@
 
       <ol class="breadcrumb">
         <li><a href="{{url('/')}}"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="{{url('departements')}}"><i class="fa fa-dashboard"></i> @lang('global.departements.title')</a></li>
+        <li><a href="{{url('cabang')}}"><i class="fa fa-dashboard"></i> @lang('global.departements.title')</a></li>
         <li class="active">@lang('global.app_create')</li>
       </ol>    
 @stop
 
 @section('content')
-    {!! Form::open(['method' => 'POST', 'route' => ['departements.store'],'class' => 'form-horizontal']) !!}
+    {!! Form::open(['method' => 'POST', 'route' => ['cabang.store'],'class' => 'form-horizontal']) !!}
 
 <div class="row">
 

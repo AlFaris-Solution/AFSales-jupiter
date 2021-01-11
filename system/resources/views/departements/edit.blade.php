@@ -8,14 +8,14 @@
 
       <ol class="breadcrumb">
         <li><a href="{{url('/')}}"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="{{url('departements')}}"><i class="fa fa-dashboard"></i> @lang('global.departements.title')</a></li>
+        <li><a href="{{url('cabang')}}"><i class="fa fa-dashboard"></i> @lang('global.departements.title')</a></li>
         <li class="active">@lang('global.app_update')</li>
       </ol>    
 @stop
 
 @section('content')
     
-    {!! Form::model($departements, ['method' => 'PUT', 'route' => ['departements.update', $departements->id],'class' => 'form-horizontal']) !!}
+    {!! Form::model($departements, ['method' => 'PUT', 'route' => ['cabang.update', $departements->id],'class' => 'form-horizontal']) !!}
 
 
 <div class="row">
