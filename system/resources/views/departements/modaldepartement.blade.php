@@ -28,8 +28,8 @@
                                                 <th style="width:1%" hidden="true" >
                                                     &nbsp;
                                                 </th>
-                                                <th style="width:19%">Kode Departement</th>
-                                                <th style="width:40%">Nama Departement</th>
+                                                <th style="width:19%">Kode Caband</th>
+                                                <th style="width:40%">Nama Cabang</th>
                                                 <th style="width:15%">Tipe</th>
                                                 <th style="width:15%">Kurs</th>
                                             </tr>

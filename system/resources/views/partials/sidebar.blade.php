@@ -107,7 +107,7 @@
                             <li><a href="{{ url('akun') }}"> Data Akun</a></li>
                             @endcan
                             @can('Lihat Departemen')
-                            <li><a href="{{ url('departements') }}"> Data Cabang</a></li>
+                            <li><a href="{{ url('cabang') }}"> Data Cabang</a></li>
                             @endcan
                             @can('Lihat Gudang')
                             <li><a href="{{ url('gudang') }}"> Data Gudang</a></li>

@@ -153,7 +153,7 @@
                     {!! Form::text('kurs', old('kurs'), ['class' => 'form-control', 'placeholder' => 'IDR']) !!}
                     </div>
                     
-                    {!! Form::label('departement', 'Departement', ['class' => 'col-sm-2 control-label']) !!}
+                    {!! Form::label('departement', 'Cabang', ['class' => 'col-sm-2 control-label']) !!}
                     <div class="col-sm-4">
                     {!! Form::select('departement', $departement, old('departement'), ['class' => 'form-control', 'placeholder' => '-- Departement --']) !!}
                     </div>

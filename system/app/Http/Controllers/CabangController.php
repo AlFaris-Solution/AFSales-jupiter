@@ -50,7 +50,7 @@ class DepartementController extends Controller
         return DataTables::of($roles)
                ->addColumn('action', function ($role) {
                 return
-                  '<div class="text-center btn-group btn-group-justified"><a href="'.route('departements.edit',[$role->id]).'" title="Edit" Onclick="return ConfirmEdit();"><button type="button" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></button></a> <a href="departements/delete/'.$role->id.'" title="Delete" Onclick="return ConfirmDelete();"><button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button></a></div>';
+                  '<div class="text-center btn-group btn-group-justified"><a href="'.route('cabang.edit',[$role->id]).'" title="Edit" Onclick="return ConfirmEdit();"><button type="button" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></button></a> <a href="departements/delete/'.$role->id.'" title="Delete" Onclick="return ConfirmDelete();"><button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button></a></div>';
             })
             //->editColumn('id', 'ID: {{$id}}')
             //->removeColumn('password')
@@ -104,7 +104,7 @@ class DepartementController extends Controller
       $validator = Validator::make(Input::all(), $rules, $messages);
 
       if ($validator->fails()) {
-            return Redirect::to('departements/create')->withErrors($validator)->withInput();
+            return Redirect::to('cabang/create')->withErrors($validator)->withInput();
       } else {
 
         Departement::create($request->all());
@@ -173,7 +173,7 @@ class DepartementController extends Controller
       $validator = Validator::make(Input::all(), $rules, $messages);
 
       if ($validator->fails()) {
-            return Redirect::to('departements/edit')->withErrors($validator)->withInput();
+            return Redirect::to('cabang/edit')->withErrors($validator)->withInput();
       } else {
 
         $departements = Departement::findOrFail($id);

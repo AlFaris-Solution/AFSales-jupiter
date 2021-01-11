@@ -162,7 +162,7 @@
             
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('departement_id', 'Departement', ['class' => 'col-xs-2 control-label']) !!}
+                    {!! Form::label('departement_id', 'Cabang', ['class' => 'col-xs-2 control-label']) !!}
                     <div class="col-xs-10">
                     <div class="input-group"> 
                     {!! Form::hidden('departement_id', old('departement_id'), ['class' => 'form-control']) !!}
