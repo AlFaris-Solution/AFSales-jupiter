@@ -1,1 +1,0 @@
-<div class="form-group "><label for="key" class="control-label">Key</label>&nbsp;<input class="form-control" name="key" type="text" id="key"></div>
