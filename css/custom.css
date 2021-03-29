@@ -1,0 +1,166 @@
+body {
+    background: #F4F6F9 !important;
+    margin: 0;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+.content .alert-success,
+.content .alert-warning,
+.content .alert-danger {
+    margin-top: 5em!important;
+}
+.panel {
+    margin-bottom: 3em !important;
+}
+.panel.panel-default {
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    border: 0 !important;
+    border-top: 3px solid #65BA9A !important;
+}
+.panel.panel-default .panel-heading {
+    background: #fff;
+}
+.mt-1 {
+    margin-top: 1em !important;
+}
+.nav-md ul.nav.child_menu li.divider:before {
+    background: transparent !important;
+    content: none;
+}
+.dt-button.buttons-excel.buttons-html5 {
+    padding:5px 10px;
+    font-size:12px;
+    line-height:1.5;
+    border-radius:3px;
+    background: #26B99A !important;
+    color: #fff !important;
+    border-color: #169F85 !important;
+    margin-left: 1px;
+}
+.dt-button.buttons-excel.buttons-html5.focus,
+.dt-button.buttons-excel.buttons-html5:focus{
+    background:#169F85 !important;
+}
+.dt-button.buttons-excel.buttons-html5:hover{
+    background:#169F85 !important;
+}
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+    padding: 7px 1em !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    margin-left: 0 !important;
+    border-radius: 0 !important;
+    border-radius: none;
+    border-left: 1px solid transparent !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    border-radius: 4px 0 0 4px !important;
+    border-left: 1px solid #ddd !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+    border-radius: 0 4px 4px 0 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #000 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    margin-left: 0;
+    border-radius: 0;
+    border: 1px solid #65BA9A !important;
+    color: #fff !important;
+    background: #65BA9A !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled {
+    margin-left: 0;
+}
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+    padding: 7px 1em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+table.dataTable tfoot th, table.dataTable tfoot td {
+    padding: 10px 18px 6px 8px;
+}
+.datepicker {
+    border-radius: 0 !important;
+    border-radius: none;
+}
+.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+table .btn-group .btn, 
+table .btn-group a .btn {
+    border-radius: 0;
+}
+table .btn-group .btn:first-child,
+table .btn-group a:first-child .btn {
+    border-radius: 3px 0 0 3px;
+}
+table .btn-group .btn:last-child, 
+table .btn-group a:last-child .btn {
+    border-radius: 0 3px 3px 0;
+}
+.nav.side-menu>li>a {
+    font-size: 14px;
+}
+.nav.child_menu>li>a {
+    font-size: 13px;
+}
+.nav.navbar-nav li a {
+    padding: 5px 15px 6px;
+    color: #5A738E !important;
+}
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li a:focus {
+    color: #12529 !important;
+}
+.nav.toggle a i {
+    font-size: 16px !important;
+}
+.nav.toggle a {
+    padding: 15px 10px 0;
+    margin-left: 1em;
+}
+a.user-profile.dropdown-toggle {
+    color: #5A738E !important;
+}
+.top_nav .nav .open>a, .top_nav .nav .open>a:focus, .top_nav .nav .open>a:hover, .top_nav .nav>li>a:focus, .top_nav .nav>li>a:hover {
+    background: #fff;
+    color: #000 !important;
+}
+.form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.select2 {
+    font-size: 12px;
+    width:100% !important;
+}
+.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single {
+    min-height: 30px;
+    max-height: 30px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-top: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 30px;
+}
+.modal-content {
+    border-radius: 0 !important;
+}
