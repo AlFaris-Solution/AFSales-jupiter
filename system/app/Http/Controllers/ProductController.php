@@ -191,6 +191,7 @@ public function data(Request $request)
         $transaction->harga_jual_satuan = $request->harga_jual_satuan;
         $transaction->harga_jual_reseller = $request->harga_jual_reseller;
         $transaction->harga_jual_kredit = $request->harga_jual_kredit;
+        $transaction->harga_jual_penawaran = $request->harga_jual_penawaran;
         $transaction->supplier_id = $request->supplier_id;
         $transaction->pajak_masuk = $request->pajak_masuk;
         $transaction->pajak_keluar = $request->pajak_keluar;
@@ -596,14 +597,20 @@ public function data(Request $request)
     {        if($request->hasFile('file')){
             Excel::load($request->file('file')->getRealPath(), function ($reader) {
                 foreach ($reader->toArray() as $key => $row) {
-                    $data['kode_produk'] = $row['kode'];
+                    $data['kode_produk'] = $row['kode_produk'];
                     $data['name'] = $row['nama_produk'];
                     $data['nama_produk'] = $row['nama_produk'];
                     $data['stok'] = $row['stok'];
-                    $data['stok_min'] = 1;
+                    $data['stok_min'] = $row['stok_min'];
                     $data['harga_beli_satuan'] = $row['harga_beli_satuan'];
                     $data['harga_jual_satuan'] = $row['harga_jual_satuan'];
-                    $data['uom_id'] = 22;
+                    $data['harga_jual_reseller'] = $row['harga_jual_reseller'];
+                    $data['harga_jual_kredit'] = $row['harga_jual_kredit'];
+                    $data['harga_jual_penawaran'] = $row['harga_jual_penawaran'];
+                    $data['pct_harga'] = $row['lama_angsuran'];
+                    $data['supplier_id'] = $row['supplier'];
+                    $data['uom_id'] = $row['satuan'];
+                    $data['kategori_id'] = $row['kategori'];
                     $data['is_active'] = 0;
 
                     if(!empty($data)) {
